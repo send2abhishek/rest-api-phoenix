@@ -9,6 +9,7 @@ defmodule ProductWeb.Router do
     pipe_through :api
     get "/", MainController, :index
     post "/products", MainController, :create
+    post "/register", UserController, :create
   end
 
   # scope "/", ProductWeb do
